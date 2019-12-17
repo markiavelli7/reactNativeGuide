@@ -231,3 +231,25 @@ we are telling our list that we want it to scroll horizontally
 </TouchableOpacity>
 ```
 
+## Showing Images
+
+Static assets go into the **assets** folder.
+
+```javascript
+import {Image} from "react-native"
+
+return (
+  <View>
+    <Image source={require('../../')} />
+  </View>
+)
+```
+
+## Passing Images as Props
+
+```javascript
+<ImageDetail
+  title="Hello"
+  img={require("../../assets/forest.jpg")}
+></ImageDetail>
+```
